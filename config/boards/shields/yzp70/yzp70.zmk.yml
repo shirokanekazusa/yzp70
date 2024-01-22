@@ -1,0 +1,8 @@
+file_format: "1"
+id: yzp70
+name: yzp70
+type: shield
+url: https://makerdiary.com/pages/m60-mechanical-keyboard
+requires: [nrfmicro_13_52840]
+features:
+  - keys
