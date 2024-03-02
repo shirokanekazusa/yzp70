@@ -12,6 +12,15 @@
 #define FN  1
 
 / {
+    macros {
+        number: number {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N3 &kp N0 &kp N6 &kp N0 &kp N6 &kp N3 &kp N4 &kp N2 &kp N4>;
+            label = "NUMBER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -33,7 +42,7 @@
 &trans     &bt BT_CLR    &none         &none         &none         &none         &none   &none   &none   &none   &none    &none    &none    &sys_reset   &trans  &trans           &bt BT_PRV
 &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &none    &none    &trans
 &trans     &none         &none         &none         &none         &none         &none   &none   &none   &none   &none             &trans                        &kp C_VOLUME_UP
-&trans     &trans        &trans                                    &trans                                        &trans   &trans   &trans                &trans  &kp C_VOL_DN     &kp K_MUTE
+&trans     &trans        &trans                                    &trans                                        &trans   &trans   &trans                &trans  &kp C_VOL_DN     &kp C_MUTE
             >;
         };
     };
