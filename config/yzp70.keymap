@@ -13,11 +13,18 @@
 
 / {
     macros {
-        number: number {
+        QQnum: number {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N3 &kp N0 &kp N6 &kp N0 &kp N6 &kp N3 &kp N4 &kp N2 &kp N4>;
             label = "NUMBER";
+        };
+
+        mima: mima {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp H &kp B &kp N2 &kp N0 &kp N0 &kp N1 &kp N0 &kp N6 &kp N1 &kp N3>;
+            label = "MIMA";
         };
     };
 
@@ -38,8 +45,8 @@
         fn_layer {
             label = "FN";
             bindings = <
-&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &bootloader  &trans  &kp LG(G)        &bt BT_NXT
-&trans     &bt BT_CLR    &none         &none         &none         &none         &none   &none   &none   &none   &none    &none    &none    &sys_reset   &trans  &kp LG(LA(R))    &bt BT_PRV
+&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &bootloader  &QQnum  &kp LG(G)        &bt BT_NXT
+&trans     &bt BT_CLR    &none         &none         &none         &none         &none   &none   &none   &none   &none    &none    &none    &sys_reset   &mima   &kp LG(LA(R))    &bt BT_PRV
 &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &none    &none    &trans
 &trans     &none         &trans        &none         &none         &none         &none   &none   &none   &none   &none             &trans                        &kp C_VOLUME_UP
 &trans     &trans        &kp LEFT_GUI                              &trans                                        &trans   &trans   &trans                &trans  &kp C_VOL_DN     &kp C_MUTE
