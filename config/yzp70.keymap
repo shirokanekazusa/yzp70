@@ -23,7 +23,7 @@
         mima: mima {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp H &kp B &kp KP_ENTER &kp N2 &kp N0 &kp N0 &kp N1 &kp N0 &kp N6 &kp N1 &kp N3>;
+            bindings = <&kp L &kp H &kp B &kp N2 &kp N0 &kp N0 &kp N1 &kp N0 &kp N6 &kp N1 &kp N3>;
             label = "MIMA";
         };
     };
