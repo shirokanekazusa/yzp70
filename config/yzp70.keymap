@@ -45,11 +45,11 @@
         fn_layer {
             label = "FN";
             bindings = <
-&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &bootloader  &QQnum  &kp LG(G)        &bt BT_NXT
-&trans     &bt BT_CLR    &trans        &none         &none         &none         &none   &none   &none   &none   &none    &none    &none    &sys_reset   &mima   &kp LG(LA(R))    &bt BT_PRV
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &none    &none    &trans
-&trans     &none         &trans        &none         &none         &none         &none   &none   &none   &none   &none             &trans                        &kp C_VOLUME_UP
-&trans     &trans        &kp LEFT_GUI                              &trans                                        &trans   &trans   &trans                &trans  &kp C_VOL_DN     &kp C_MUTE
+&kp GRAVE       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &bootloader  &QQnum  &kp LG(G)        &bt BT_NXT
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &sys_reset   &mima   &kp LG(LA(R))    &bt BT_PRV
+&bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans            &trans                        &kp C_VOLUME_UP
+&trans          &trans        &trans                                    &trans                                        &trans   &trans   &trans                &trans  &kp C_VOL_DN     &kp C_MUTE
             >;
         };
     };
